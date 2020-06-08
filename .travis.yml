@@ -1,0 +1,7 @@
+sudo: required
+services:
+  - docker
+
+script:
+  - docker build -t jhamm27/node .
+  - docker images jhamm27/node
