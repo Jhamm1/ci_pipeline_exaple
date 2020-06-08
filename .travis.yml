@@ -5,3 +5,12 @@ services:
 script:
   - docker build -t jhamm27/node .
   - docker images jhamm27/node
+
+before_deploy:
+  - docker login -u USERNAME -p PASSWORD
+
+deploy:
+  provider: script
+  script: docker push jhamm27/node
+  on:
+    branch: master
