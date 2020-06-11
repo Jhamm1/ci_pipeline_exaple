@@ -1,3 +1,3 @@
 # ci_pipeline_exaple
 
-Integrating Docker with CI/CD
+An example project of how to integrate Docker in a CI/CD pipeline
